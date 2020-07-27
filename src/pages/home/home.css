@@ -1,0 +1,15 @@
+.home-container {
+	position: relative;
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 1fr 40px;
+	grid-template-areas:
+		'menu menu'
+		'information information'
+		'footer footer';
+}
+
+.content {
+	grid-area: information;
+}

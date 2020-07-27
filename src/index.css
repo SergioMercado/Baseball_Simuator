@@ -1,0 +1,22 @@
+:root {
+	--main_blue_color: #32008b;
+	--main_red_color: #c50000;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: white;
+	font-size: 16px;
+	display: inline-block;
+}

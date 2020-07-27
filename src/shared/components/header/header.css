@@ -1,0 +1,15 @@
+.menu {
+	background-color: #11012d;
+}
+
+.menu .nav-item a {
+	color: white;
+}
+
+.logo {
+	margin: 0;
+}
+
+.logo img {
+	max-width: 100px;
+}
