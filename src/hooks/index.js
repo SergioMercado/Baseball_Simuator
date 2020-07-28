@@ -1,6 +1,7 @@
 import axios from 'axios'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { firestore } from 'shared/utils/firebase'
 import useSWR from 'swr'
 export function useRedirect(path = '/') {
 	const history = useHistory()
@@ -33,5 +34,28 @@ export function useRequest(path) {
 
 	const isLoading = !data && !error
 
-	return { data, isLoading, error, isLoading, mutate }
+	return { data, isLoading, error, mutate }
+}
+
+export function useFirestoreSubscription(collectionName) {
+	const [data, setData] = useState(null)
+
+	if (!collectionName) {
+		throw new Error('Collection name is required!')
+	}
+	useEffect(() => {
+		const unsubscribe = firestore
+			.collection(collectionName)
+			.onSnapshot((querySnapshot) => {
+				const data = []
+
+				querySnapshot.forEach((doc) => data.push({ id: doc.id, ...doc.data() }))
+
+				setData(data)
+			})
+
+		return () => unsubscribe()
+	}, [collectionName])
+
+	return { data, isLoading: !data }
 }

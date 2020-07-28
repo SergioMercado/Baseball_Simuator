@@ -1,0 +1,36 @@
+.result {
+	padding: 1.5rem;
+}
+
+.result__title {
+	margin-bottom: 2rem;
+	color: rgb(0, 72, 171);
+	font-weight: bold;
+}
+
+.result__title-marked {
+	color: rgb(170, 170, 170);
+}
+
+.teams__preview {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.teams__preview--start {
+	color: rgb(0, 72, 171);
+	cursor: pointer;
+}
+
+.teams__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.teams__header--date {
+	font-weight: normal;
+}
+
+.teams__header--status {
+	color: green;
+}

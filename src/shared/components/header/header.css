@@ -1,9 +1,22 @@
 .menu {
 	background-color: #11012d;
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
 }
 
 .menu .nav-item a {
 	color: white;
+}
+
+#menu .navbar-collapse {
+	background-color: #11012d;
+}
+
+.nav-link {
+	margin-left: 1rem;
 }
 
 .logo {
@@ -12,4 +25,23 @@
 
 .logo img {
 	max-width: 100px;
+}
+
+@media screen and (max-width: 678px) {
+	#menu .navbar-collapse {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		border-top: 1px solid #ddd;
+	}
+
+	.nav-item {
+		border-bottom: 1px solid #ddd;
+		line-height: 2;
+	}
+
+	#menu .navbar-brand {
+		padding: 0;
+	}
 }

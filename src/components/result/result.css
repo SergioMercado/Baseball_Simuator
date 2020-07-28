@@ -1,0 +1,64 @@
+.teams {
+	box-shadow: 0 0.9px 1.9px -27px rgba(0, 0, 0, 0.011),
+		0 2.1px 5.6px -27px rgba(0, 0, 0, 0.014),
+		0 3.7px 14px -27px rgba(0, 0, 0, 0.015),
+		0 5.9px 36.5px -27px rgba(0, 0, 0, 0.016),
+		0 9.1px 53.1px -27px rgba(0, 0, 0, 0.019),
+		0 14.2px 62.1px -27px rgba(0, 0, 0, 0.025),
+		0 23.5px 68.3px -27px rgba(0, 0, 0, 0.036),
+		0 47px 73px -27px rgba(0, 0, 0, 0.06);
+	transition: transform 100ms ease-in;
+}
+
+.teams:hover {
+	transform: scale(1.03, 1.03);
+	box-shadow: 0 0.2px 1.5px -32px rgba(0, 0, 0, 0.33),
+		0 0.4px 4.3px -32px rgba(0, 0, 0, 0.207),
+		0 0.6px 9.8px -32px rgba(0, 0, 0, 0.147),
+		0 0.9px 23.7px -32px rgba(0, 0, 0, 0.114),
+		0 1.4px 43.6px -32px rgba(0, 0, 0, 0.095),
+		0 2px 54.2px -32px rgba(0, 0, 0, 0.085),
+		0 3px 61px -32px rgba(0, 0, 0, 0.079),
+		0 4.8px 66.1px -32px rgba(0, 0, 0, 0.073),
+		0 9px 70px -32px rgba(0, 0, 0, 0.06);
+}
+
+.teams__header {
+	background-color: #fff;
+	color: rgb(145, 142, 142);
+	font-weight: bold;
+}
+
+.teams__figure {
+	display: block;
+}
+
+.teams__figure--name {
+	margin-left: 0.5rem;
+	font-weight: bold;
+}
+
+.teams__figure--score {
+	font-weight: normal;
+	margin-left: 0.5rem;
+	font-size: 0.9rem;
+	color: rgb(145, 142, 142);
+}
+
+.teams__image {
+	max-width: 15%;
+	object-fit: contain;
+}
+
+.teams__versus {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: rgb(0, 72, 171);
+	font-size: 2rem;
+	margin: auto 0.5rem;
+	font-style: italic;
+}
+
+.teams__preview {
+	font-weight: bold;
+	text-align: center;
+}

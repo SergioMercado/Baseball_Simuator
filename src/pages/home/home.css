@@ -1,15 +1,17 @@
-.home-container {
-	position: relative;
-	display: grid;
-	height: 100vh;
-	grid-template-columns: 1fr;
-	grid-template-rows: 70px 1fr 40px;
-	grid-template-areas:
-		'menu menu'
-		'information information'
-		'footer footer';
+.home__title {
+	padding-top: 2.5rem;
+	padding-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: left;
+	color: rgb(0, 72, 171);
 }
 
-.content {
-	grid-area: information;
+.home__title--marked {
+	color: rgb(170, 170, 170);
+}
+
+.home__table--row td,
+.home__table--row th {
+	vertical-align: middle;
 }

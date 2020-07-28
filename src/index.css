@@ -20,3 +20,21 @@ button {
 	font-size: 16px;
 	display: inline-block;
 }
+
+.main-container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 1fr 40px;
+	grid-template-areas:
+		'menu menu'
+		'information information'
+		'footer footer';
+}
+
+.content {
+	grid-area: information;
+	min-height: 100vh;
+	margin-top: 7rem;
+	margin-bottom: 2.5rem;
+}

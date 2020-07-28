@@ -1,0 +1,35 @@
+.positions {
+	padding: 1.5rem;
+}
+
+.positions__header {
+	background-color: #11012d;
+}
+
+.positions__title {
+	font-weight: bold;
+	margin-bottom: 2rem;
+	color: rgb(0, 72, 171);
+}
+
+.positions__title-marked {
+	color: rgb(170, 170, 170);
+}
+
+.positions__rows td {
+	vertical-align: middle;
+}
+
+.positions__figure {
+	margin: 0;
+}
+
+.positions__image {
+	width: 75px;
+}
+
+.positions__figure--name {
+	font-weight: bold;
+	color: #11012d;
+	margin-left: 1rem;
+}
